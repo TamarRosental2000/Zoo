@@ -27,11 +27,12 @@ namespace Zoo.Controllers
             //{
             //    s = s + s;
             //}
-            var s1 = new StringBuilder();
-            for (int i = 0; i < 1000000000000; i++)
+            var s1 = new StringBuilder("aaaaaa");
+            for (int i = 0; i < 10000000; i++)
             {
                 s1 = s1.Append(s1);
             }
+            s1.ToString();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
